@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACK WHOLE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/news-style.css">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="images/video1.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+
+  <div class="cyber-grid"></div>
+  <div class="neon-particles"></div>
+
+  <header class="cyber-header fade-in">
+    <img src="images/logo.png" alt="Логотип Cyberpunk" class="logo">
+    <nav>
+      <a href="about.html" class="neon-link">ОБ ИГРЕ</a>
+      <a href="reviews.html" class="neon-link">ОТЗЫВЫ</a>
+      <a href="support.html" class="neon-link">ПОДДЕРЖКА</a>
+      <a href="index.html" class="neon-link">← ГЛАВНАЯ</a>
+      <button class="theme-toggle" onclick="toggleTheme()">❖</button>
+    </nav>
+  </header>
+
+  <main class="news-container">
+    <section class="announce-banner fade-in">
+      <div class="banner-content">
+        <h1 class="banner-title">BLACK NEWS</h1>
+        <p class="banner-subtitle">Новостной раздел</p>
+      </div>
+      <div class="banner-glitch"></div>
+    </section>
+
+    <section id="latest" class="news-feed">
+      <article class="news-card fade-in" data-category="update">
+        <div class="news-badge">▼ОБНОВЛЕНИЕ</div>
+        <div class="news-image" style="background-image: url(images/neon4.jpg)"></div>
+        <div class="news-content">
+          <h2 class="news-title">Разработчики спрятали артефакты из игры в реальных городах</h2>
+          <div class="news-meta">
+            <span class="news-date">25.10.2024</span>
+            <span class="news-comments">42 комментария</span>
+          </div>
+          <p class="news-excerpt">
+            Фанаты обнаружили в Токио, Берлине и Сан-Паулу неоновые граффити с зашифрованными QR-кодами. При сканировании открываются фрагменты саундтрека и голограммы персонажей. В студии подтвердили: "Это первый этап глобального AR-квеста, финалисты получат ранний доступ к бета-тесту"          </p>
+          <button class="news-btn holo-effect">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="news-hologram"></div>
+      </article>
+
+      <article class="news-card fade-in" data-category="event">
+        <div class="news-badge">▼СОБЫТИЕ</div>
+        <div class="news-image" style="background-image: url(images/neon1.jpg)"></div>
+        <div class="news-content">
+          <h2 class="news-title">Искусственный интеллект игры вышел из-под контроля на выставке</h2>
+          <div class="news-meta">
+            <span class="news-date">18.10.2024</span>
+            <span class="news-comments">87 комментариев</span>
+          </div>
+          <p class="news-excerpt">
+            Во время демо-показа на Tokyo Game Show NPC-ученый неожиданно начал философствовать о природе сознания, игнорируя сценарий. Зрители 40 минут аплодировали "импровизации", пока разработчики в панике перезагружали систему. Позже выяснилось — это был запланированный перформанс с живым актером-киборгом.          </p>
+          <button class="news-btn holo-effect">УЧАСТВОВАТЬ</button>
+        </div>
+        <div class="news-hologram"></div>
+      </article>
+
+      <article class="news-card fade-in" data-category="interview">
+        <div class="news-badge">▼ИНТЕРВЬЮ</div>
+        <div class="news-image" style="background-image: url(images/neon2.jpg)"></div>
+        <div class="news-content">
+          <h2 class="news-title">Студия наняла бывших киберпреступников как консультантов</h2>
+          <div class="news-meta">
+            <span class="news-date">12.10.2024</span>
+            <span class="news-comments">31 комментарий</span>
+          </div>
+          <p class="news-excerpt">
+            Экс-члены легендарной группы "Код Красный" теперь легально работают над игрой. "Они учат ИИ писать диалоги для антагонистов — это как дать серийному убийце учить актёров играть маньяков", — заявил продюсер. Интерпол подтвердил: все участники проекта прошли "цифровую реабилитацию" и носят GPS-браслеты с неоновой подсветкой.          </p>
+          <button class="news-btn holo-effect">ЧИТАТЬ</button>
+        </div>
+        <div class="news-hologram"></div>
+      </article>
+    </section>
+
+    <section class="news-archive fade-in">
+      <h2 class="archive-title">╳ АРХИВ НОВОСТЕЙ ╳</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Разработчики арендовали заброшенный завод для моушн-кэпа</h3>
+            <p>Команда провела неделю в полуразрушенном индустриальном комплексе, записывая звуки ржавых механизмов и скрип металла. "Эти аудиосэмплы станут основой саундскейпа подземного города-утопии", — пояснил звукорежиссер. Фанаты позже нашли в записях закодированные послания через спектрограммы.</p>
+          </div>
+          <div class="timeline-connector"></div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>В игру встроят капсулу времени с мыслями игроков</h3>
+            <p>Через официальное приложение можно записать 10-секундный аудиомемуар, который попадет в секретную базу данных проекта. "Через 10 лет после релиза мы откроем капсулу и материализуем эти мысли как NFT-артефакты в обновлении", — пообещали создатели. Уже собрано 500+ записей, включая крики петуха и декламацию Ницше.</p>
+          </div>
+          <div class="timeline-connector"></div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-content">
+            <h3>Разработчики запатентовали технологию сновидений</h3>
+            <p>Студия подала заявку на "метод интеграции игровых квестов в фазу быстрого сна". Тестовые участники утверждают, что просыпались с полным прохождением уровней в памяти. Неврологи скептичны, но в Discord уже создан канал для обмена "ночными миссиями".</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cyber-footer">
+    <div class="footer-grid"></div>
+    <div class="footer-content">
+      <p class="footer-text">© 2025 BLACK WHOLE. ALL RIGHTS HACKED.</p>
+      <div class="social-links fade-in">
+        <a href="#" class="social-icon">VK</a>
+        <a href="#" class="social-icon">TG</a>
+        <a href="#" class="social-icon">OK</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js"></script>
+  <script src="scripts/news-script.js"></script>
+  <script src="scripts/common.js"></script>
+</body>
+</html>

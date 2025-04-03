@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACK WHOLE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="images/video1.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+
+  <header class="header fade-in">
+    <div class="topbar">
+      <img src="images/logo.png" alt="Логотип Cyberpunk" class="logo">
+      <nav class="menu">
+        <a href="about.html" class="menu-item">ОБ ИГРЕ</a>
+        <a href="news.html" class="menu-item">НОВОСТИ</a>
+        <a href="reviews.html" class="menu-item">ОТЗЫВЫ</a>
+        <a href="support.html" class="menu-item">ПОДДЕРЖКА</a>
+        <button class="theme-toggle" onclick="toggleTheme()">❖</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero-section fade-in">
+      <div class="hero-content">
+        <h1 class="hero-title">BLACK WHOLE</h1>
+        <div class="hero-actions">
+          <button class="btn-primary"><a href="#preorder">ПРЕДЗАКАЗ</a></button>
+          <button class="btn-secondary"><a href="#hero1">ИНФОРМАЦИЯ</a></button>
+        </divs>
+      </div>
+    </section>
+
+    <section class="character-section fade-in">
+      <a name="hero1"></a>
+      <article class="character-card">
+          <div class="character-info">
+              <h2 class="character-name">
+                Кай ◀CYBER▶
+              </h2>
+              <p class="character-description">
+                <span class="neon-percent">Внешность</span> ◆ Короткие чёрные волосы с синими отблесками, холодные серебристые глаза, которые светятся при активации кибернетики. Носит облегающий чёрный комбинезон с голубыми неоновыми прожилками, образующими сетку на груди и плечах. На лице — маска с голографическими проекциями данных.
+                <br><br>
+                <span class="neon-percent">Характер</span> ◆ Рационален, но идеалистичен. Верит в свободу информации и равенство доступа к технологиям. Холоден в бою, но предан своим принципам. Обладает острым чувством юмора «чёрного» плана. Не боится рисковать собой ради спасения других, но жёстко карает предателей.
+                <br><br>
+                <span class="neon-percent">Фишка</span> ◆ Может «загружаться» в сеть через порт в шее, превращаясь в цифровой призрак. Его фишкой является создание временных «цифровых пузырей», где он полностью контролирует время и пространство (замедляет реакцию врагов, создаёт ловушки). Использует армию автономных дронов-«тени», которые копируют его движения и атакуют одновременно с ним.
+                <br><br>
+                Глава группировки кибер-хакеров <span class="neon-percent">☮INSEC☮</span>
+              </p>
+          </div>
+          <img src="images/anime26.png" alt="Персонаж Виолет" class="character-image fade-in">
+      </article>
+    </section>
+
+    <section class="gallery fade-in">
+      <div class="neon-grid"></div>
+      <div class="particles"></div>
+
+      <div class="gallery-header">
+          <h2 class="glitch-text" data-text="╳ ГРУППИРОВКА ☮INSEC☮ ╳">╳ ГРУППИРОВКА ☮INSEC☮ ╳</h2>
+          <div class="scan-line"></div>
+      </div>
+
+      <div class="hologram-container">
+          <div class="hologram-card">
+              <div class="holo-frame"></div>
+              <img src="images/anime33.png" class="holo-image fade-in" alt="Неоновый мегаполис">
+              <div class="location-info">
+                  <h3>МИ</h3>
+                  <div class="progress-bar">
+                      <div class="progress-fill" data-progress="87%"></div>
+                  </div>
+                  <p>Нейроразведчик: <span class="neon-percent">взламывает корпоративные нейроинтерфейсы.</span></p>
+              </div>
+          </div>
+
+          <div class="hologram-card">
+              <div class="holo-frame"></div>
+              <img src="images/anime29.png" class="holo-image fade-in" alt="Хакерское логово">
+              <div class="location-info">
+                  <h3>ДЖЕЙ</h3>
+                  <div class="progress-bar">
+                      <div class="progress-fill" data-progress="40%"></div>
+                  </div>
+                  <p>Глитч-шаман: <span class="neon-percent">ремонтирует цифровые души ИИ.</span></p>
+              </div>
+          </div>
+
+          <div class="hologram-card">
+              <div class="holo-frame"></div>
+              <img src="images/anime32.png" class="holo-image fade-in" alt="Киберхрам">
+              <div class="location-info">
+                  <h3>КАОРИ</h3>
+                  <div class="progress-bar">
+                      <div class="progress-fill" data-progress="2%"></div>
+                  </div>
+                  <p>Кибердилер: <span class="neon-percent">продает чипы с запрещенными эмоциями.</span></p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="character-section fade-in change-size-background">
+        <article class="character-card">
+            <img src="images/anime31.png" alt="Персонаж Виолет" class="character-image fade-in">
+            <div class="character-info">
+                <h2 class="character-name">
+                  Трейси ◀FROZEN▶
+                </h2>
+                <p class="character-description">
+                  <span class="neon-percent">Внешность</span> ◆ Длинные чёрно-синие волосы с красными лентами-«рогами», ярко-красные глаза, контрастирующие с бледной кожей. Одевается в облегающий красный комбинезон с серебристыми вставками и голограмрафическими полосами, которые мерцают при движении. На ногах — высокие ботфорты с острыми шипами.
+                  <br><br>
+                  <span class="neon-percent">Характер</span> ◆ Холодная, расчётливая и харизматичная. Обладает циничным чувством юмора, но не терпит слабости. Умеет манипулировать людьми, используя их страхи и желания. Верит, что «сила — в контроле над информацией». Готова пойти на любые жертвы ради власти, но ценит преданность своих последователей.
+                  <br><br>
+                  <span class="neon-percent">Фишка</span> ◆ Её «визитная карточка» — внезапное исчезновение в потоках данных, оставляя вместо себя лишь эхо собственного смеха. Использует армию автономных дронов-пауков для сбора информации и физических атак.
+                  <br><br>
+                  Глава группировки кибер-хакеров <span class="neon-percent">☣DIVISION☣</span>
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="gallery fade-in">
+      <div class="neon-grid"></div>
+      <div class="particles"></div>
+
+      <div class="gallery-header">
+          <h2 class="glitch-text" data-text="╳ ГРУППИРОВКА ☣DIVISION☣ ╳">╳ ГРУППИРОВКА ☣DIVISION☣ ╳</h2>
+          <div class="scan-line"></div>
+      </div>
+
+      <div class="hologram-container">
+          <div class="hologram-card">
+              <div class="holo-frame"></div>
+              <img src="images/anime23.png" class="holo-image fade-in" alt="Неоновый мегаполис">
+              <div class="location-info">
+                  <h3>АМАЙА</h3>
+                  <div class="progress-bar">
+                      <div class="progress-fill" data-progress="87%"></div>
+                  </div>
+                  <p>Архитектор памяти: <span class="neon-percent">изменяет воспоминания в имплантах.</span></p>
+              </div>
+          </div>
+
+          <div class="hologram-card">
+              <div class="holo-frame"></div>
+              <img src="images/anime35.png" class="holo-image fade-in" alt="Хакерское логово">
+              <div class="location-info">
+                  <h3>МЭНА</h3>
+                  <div class="progress-bar">
+                      <div class="progress-fill" data-progress="40%"></div>
+                  </div>
+                  <p>Док Ботнетов: <span class="neon-percent">лечит зараженные IoT-устройства.</span></p>
+              </div>
+          </div>
+
+          <div class="hologram-card">
+              <div class="holo-frame"></div>
+              <img src="images/anime24.png" class="holo-image fade-in" alt="Киберхрам">
+              <div class="location-info">
+                  <h3>НЭТСУ</h3>
+                  <div class="progress-bar">
+                      <div class="progress-fill" data-progress="2%"></div>
+                  </div>
+                  <p>Хакер-экзорцист: <span class="neon-percent">вычищает из нейросетей «призраков» умерших пользователей.</span></p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <div class="background-effects fade-in">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+    </div>
+
+    <section class="preorder-section fade-in">
+      <a name="preorder"></a>
+      <div class="preorder-container">
+        <div class="preorder-content">
+          <div class="hologram-card">
+            <h3 class="preorder-subtitle">ПОЛУЧИ ЭКСКЛЮЗИВ:</h3>
+            <ul class="perks-list">
+              <li>🔥 Цифровой артбук</li>
+              <li>⚡ Уникальный скин оружия</li>
+              <li>💀 Ранний доступ к бета-тесту</li>
+            </ul>
+            <form class="preorder-form">
+              <div class="input-group">
+                  <input type="text" required class="neon-input">
+                  <span class="input-border"></span>
+                  <label>Имя оператора</label>
+              </div>
+
+              <div class="input-group">
+                  <input type="email" required class="neon-input">
+                  <span class="input-border"></span>
+                  <label>UID</label>
+              </div>
+
+              <button class="btn-preorder pulse" name="preoreder">
+                  АКТИВИРОВАТЬ ПРЕДЗАКАЗ
+                  <div class="scanline"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="preorder-modal fade-in">
+        <div class="modal-overlay"></div>
+        <div class="modal-content cyber-glitch">
+          <div class="modal-particles"></div>
+
+          <div class="modal-header">
+            <h2 class="modal-title" data-text="ПРЕДЗАКАЗ АКТИВИРОВАН">ПРЕДЗАКАЗ АКТИВИРОВАН</h2>
+            <div class="modal-scanline"></div>
+          </div>
+
+          <div class="modal-body">
+            <ul class="cyber-list">
+              <li><span>🔮 Цифровой артбук</span><div class="particle-trail"></div></li>
+              <li><span>⚡ Уникальный скин оружия</span><div class="particle-trail"></div></li>
+              <li><span>💀 Ранний доступ к бета-тесту</span><div class="particle-trail"></div></li>
+            </ul>
+
+            <div class="release-date">
+              <div class="date-glitch">ДАТА ВЫХОДА</div>
+              <div class="neon-date">2077.11.23</div>
+            </div>
+          </div>
+
+          <button class="modal-close btn-hologram">
+            <a href="reviews.html">Оставить отзыв</a>
+            <div class="hologram-reflection"></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="neon-gallery fade-in">
+      <div class="grid-overlay"></div>
+      <h2>╳ НЕОНОВЫЙ АРХИВ ╳</h2>
+
+      <div class="gallery-grid">
+          <div class="gallery-card fade-in">
+              <img src="images/neon10.png" class="gallery-image" alt="Cyber City">
+              <div class="image-caption">
+                  <h3>МЕГАПОЛИС-01 ☢</h3>
+                  <p>Сердце корпоративной империи, где неоновые реки заменяют кровь</p>
+              </div>
+          </div>
+
+          <div class="gallery-card fade-in">
+              <img src="images/neon12.png" class="gallery-image" alt="Neon Streets">
+              <div class="image-caption">
+                  <h3>ТЕНЕВЫЕ АЛЛЕИ ☢</h3>
+                  <p>Хакерские логова и черные рынки киберимплантов</p>
+              </div>
+          </div>
+
+          <div class="gallery-card fade-in">
+              <img src="images/neon3.jpg" class="gallery-image" alt="Cyber Temple">
+              <div class="image-caption">
+                  <h3>ТЕХНО-ХРАМ ☢</h3>
+                  <p>Место поклонения ИИ-божествам нового поколения</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="footer fade-in">
+    <div class="cyber-border"></div>
+
+    <div class="footer-content">
+      <div class="neon-wrapper">
+        <p class="footer-text glitch" data-text="© 2025 BLACK WHOLE. ALL RIGHTS HACKED.">
+          © 2025 BLACK WHOLE. ALL RIGHTS HACKED.
+        </p>
+        <div class="social-links fade-in">
+          <a href="#" class="social-icon">VK</a>
+          <a href="#" class="social-icon">TG</a>
+          <a href="#" class="social-icon">OK</a>
+        </div>
+        <div class="hologram-reflection"></div>
+      </div>
+
+      <div class="energy-particles">
+        <div class="particle" style="--x:0"></div>
+        <div class="particle" style="--x:0.3"></div>
+        <div class="particle" style="--x:0.7"></div>
+      </div>
+    </div>
+  </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js"></script>
+  <script>
+    document.querySelector('.btn-preorder').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.preorder-modal').classList.add('active');
+    });
+
+    document.querySelector('.modal-close').addEventListener('click', function() {
+      document.querySelector('.preorder-modal').classList.remove('active');
+    });
+
+    document.querySelector('.modal-overlay').addEventListener('click', function() {
+      document.querySelector('.preorder-modal').classList.remove('active');
+    });
+  </script>
+  <script src="scripts/common.js"></script>
+</body>
+</html>

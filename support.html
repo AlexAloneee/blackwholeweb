@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>BLACK WHOLE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/support-style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="images/video1.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+
+    <header class="cyber-header fade-in">
+        <img src="images/logo.png" alt="Логотип Cyberpunk" class="logo">
+        <nav>
+            <a href="about.html" class="neon-link">ОБ ИГРЕ</a>
+            <a href="news.html" class="neon-link">НОВОСТИ</a>
+            <a href="reviews.html" class="neon-link">ОТЗЫВЫ</a>
+            <a href="index.html" class="neon-link">← ГЛАВНАЯ</a>
+            <button class="theme-toggle" onclick="toggleTheme()">❖</button>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="contact-form section fade-in">
+            <h2 class="neon-text">Свяжитесь с нами</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Техническая проблема</option>
+                        <option>Предложение</option>
+                        <option>Баг-репорт</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Сообщение" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <div id="success-message" class="neon-text" style="display: none; margin: 20px 0;">
+                Сообщение отправлено! Спасибо за обращение ✨
+            </div>
+        </div>
+
+
+
+        <h1 class="neon-text fade-in">╳ FAQ ╳</h1>
+
+        <div class="faq fade-in">
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Когда релиз?</h3>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>"Q4 2026. Точная дата — секрет даже для наших кофемашин."</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Будет русификация?</h3>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>"Да, включая озвучку криков Мэй при падении с крыш."</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Зачем в игре столько неона?</h3>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>"Чтобы ваши соседи думали, что у вас дома rave-пати, а не игровая сессия."</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Почему игра весит 160 ГБ?</h3>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>"110 ГБ — аудиофайлы с дыханием Трейси в 8К."</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Почему в трейлере нет геймплея?</h3>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>"Потому что реальный геймплей взломает ваш мозг раньше релиза."</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Будут ли микротранзакции?</h3>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>"Только если считать микротранзакцией ваши слёзы над сложностью боссов."</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="cyber-footer fade-in">
+        <div class="footer-grid"></div>
+        <div class="footer-content">
+            <p class="footer-text">© 2025 BLACK WHOLE. ALL RIGHTS HACKED.</p>
+            <div class="social-links fade-in">
+            <a href="#" class="social-icon">VK</a>
+            <a href="#" class="social-icon">TG</a>
+            <a href="#" class="social-icon">OK</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function()
+        {
+        document.querySelector('.btn').disabled = true;
+        document.querySelector('.btn').innerText = 'Отправляем...';
+        document.getElementById('success-message').style.display = 'block';
+        });
+
+        function toggleFAQ(element) {
+            const answer = element.parentElement.querySelector('.faq-answer');
+            const allAnswers = document.querySelectorAll('.faq-answer');
+
+            allAnswers.forEach(a => {
+                if (a !== answer && a.style.maxHeight) {
+                    a.style.maxHeight = null;
+                }
+            });
+
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                element.querySelector('span').textContent = '▼';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                element.querySelector('span').textContent = '▲';
+            }
+        }
+    </script>
+    <script src="scripts/common.js"></script>
+</body>
+</html>

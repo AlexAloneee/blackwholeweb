@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK WHOLE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reviews-style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="images/video1.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+
+    <div class="container">
+        <header class="cyber-header fade-in">
+            <img src="images/logo.png" alt="Логотип Cyberpunk" class="logo">
+            <nav>
+                <a href="about.html" class="neon-link">ОБ ИГРЕ</a>
+                <a href="news.html" class="neon-link">НОВОСТИ</a>
+                <a href="support.html" class="neon-link">ПОДДЕРЖКА</a>
+                <a href="index.html" class="neon-link">← ГЛАВНАЯ</a>
+                <button class="theme-toggle" onclick="toggleTheme()">❖</button>
+            </nav>
+        </header>
+
+        <h1 class="neon-title fade-in">╳ ВАШИ ОТЗОВЫ ╳</h1>
+
+        <div class="reviews-section fade-in">
+            <div id="reviewsContainer" class="reviews-grid"></div>
+        </div>
+
+        <div class="form-container neon-border fade-in">
+            <h2 class="neon-subtitle">Оставить отзыв</h2>
+            <form id="reviewForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="content" placeholder="Ваш отзыв" required></textarea>
+                <button type="submit" class="neon-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="cyber-reviews">
+        <h2 class="neon-title-alt fade-in">╳ ОТЗЫВЫ О ПРЕДЗАКАЗЕ ╳</h2>
+
+        <div class="cyber-grid fade-in">
+            <div class="cyber-card fade-in">
+                <div class="hologram-effect"></div>
+                <div class="card-content">
+                    <img src="images/anime17.png"
+                         class="avatar" alt="Аватар">
+                    <div class="username">CyberNeko_2077</div>
+                    <div class="rating">★★★★☆</div>
+                    <p class="review-text">"Обожрался неоном! Трейлер выжег сетчатку — жду релиза как апгрейда нервной системы!"</p>
+                </div>
+            </div>
+
+            <div class="cyber-card fade-in">
+                <div class="hologram-effect"></div>
+                <div class="card-content">
+                    <img src="images/anime18.png"class="avatar" alt="Аватар">
+                    <div class="username">GhostSamurai</div>
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"Бонусный скин Мэй — это цифровой наркотик. Уже подсел, теперь нужна вся игра как антидот!"</p>
+                </div>
+            </div>
+
+            <div class="cyber-card fade-in">
+                <div class="hologram-effect"></div>
+                <div class="card-content">
+                    <img src="images/anime15.png"
+                         class="avatar" alt="Аватар">
+                    <div class="username">Runner044</div>
+                    <div class="rating">★★★★☆</div>
+                    <p class="review-text">"Купил дважды: себе и коту. Пусть учится хакерству, пока я на работе."</p>
+                </div>
+            </div>
+
+            <div class="cyber-card fade-in">
+                <div class="hologram-effect"></div>
+                <div class="card-content">
+                    <img src="images/anime20.png"
+                         class="avatar" alt="Аватар">
+                    <div class="username">IronM4n</div>
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"После предзаказа моя кредитка плачет бинарными слезами. Ни капли жалости — оно того стоит!"</p>
+                </div>
+            </div>
+
+            <div class="cyber-card fade-in">
+                <div class="hologram-effect"></div>
+                <div class="card-content">
+                    <img src="images/anime21.png"
+                         class="avatar" alt="Аватар">
+                    <div class="username">CyberForever</div>
+                    <div class="rating">★★★★☆</div>
+                    <p class="review-text">"Расстался со своей девушкой, потому что мне нравится Трейси."</p>
+                </div>
+            </div>
+
+            <div class="cyber-card fade-in">
+                <div class="hologram-effect"></div>
+                <div class="card-content">
+                    <img src="images/anime22.png"
+                         class="avatar" alt="Аватар">
+                    <div class="username">Red-S1ght</div>
+                    <div class="rating">★★★★★</div>
+                    <p class="review-text">"Из моей семьи ушел отец... Сказал вернется, когда выйдет релиз игры."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cyber-footer fade-in">
+        <div class="footer-grid"></div>
+        <div class="footer-content">
+          <p class="footer-text">© 2025 BLACK WHOLE. ALL RIGHTS HACKED.</p>
+          <div class="social-links fade-in">
+            <a href="#" class="social-icon">VK</a>
+            <a href="#" class="social-icon">TG</a>
+            <a href="#" class="social-icon">OK</a>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js"></script>
+    <script src="scripts/reviews-script.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+</html>

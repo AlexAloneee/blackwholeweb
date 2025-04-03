@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK WHOLE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/about-style.css">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="images/video1.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+
+    <div class="container">
+        <header class="cyber-header fade-in">
+          <img src="images/logo.png" alt="Логотип Cyberpunk" class="logo">
+          <nav>
+            <a href="news.html" class="neon-link">НОВОСТИ</a>
+            <a href="reviews.html" class="neon-link">ОТЗЫВЫ</a>
+            <a href="support.html" class="neon-link">ПОДДЕРЖКА</a>
+            <a href="index.html" class="neon-link">← ГЛАВНАЯ</a>
+            <button class="theme-toggle" onclick="toggleTheme()">❖</button>
+          </nav>
+        </header>
+
+
+        <main>
+          <section class="game-card fade-in">
+            <h2>╳ СЮЖЕТ ╳</h2>
+            <p>
+              В мире, где реальность и цифровые сети слились воедино, Кай — лидер группировки <span class="spec-label">◀INSEC▶</span> — борется за свободу информации. Но его мир рушится, когда он сталкивается с Трейси, главой <span class="spec-label">◀DIVISION▶</span>, чья хакерская империя контролирует потоки данных, превращая людей в цифровых рабов.
+              Каждый удар Кая по системам Трейси лишь усиливает её власть. Он замечает странное совпадение: каждый раз, когда он взламывает её серверы, активируется древний код, который будто бы… знает его имя.
+              Оказывается, Трейси не просто злодейка — она часть эксперимента, который Кай сам запустил 10 лет назад, работая в секретной корпорации. Теперь его же технологии используются против него. Но зачем? И почему Трейси называет себя «его последней ошибкой»?  
+              В решающем сражении Кай проникает в центральный сервер Трейси и видит правду: её лицо — это его собственное отражение в зеркале. Она — его клон, созданный для одного задания: уничтожить человека, который стал символом свободы.
+              Если Кай победит Трейси, он убьёт часть самого себя. А если проиграет — мир станет игрушкой в руках тех, кто управляет информацией.
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>⚡ Ключевые особенности ►</h3>
+                    <ul class="cyber-list">
+                        <li>Динамическая система взлома</li>
+                        <li>Процедурно генерируемые задания</li>
+                        <li>Моральная система киберпсихоза</li>
+                    </ul>
+                </div>
+
+                <div class="feature-item">
+                    <h3>🔮 Технологии ►</h3>
+                    <ul class="cyber-list">
+                        <li>Ray Tracing реального времени</li>
+                        <li>Нейросетевой ИИ NPC</li>
+                        <li>Деформируемые окружения</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-item" style="margin-top: 2rem;">
+                <h3>🎮 Минимальные требования ►</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">Процессор:</span>
+                        <span class="spec-value neon-cyan">Intel Core i5-4460</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Видеокарта:</span>
+                        <span class="spec-value neon-pink">NVIDIA GeForce GTX 960 2GB</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label">ОЗУ:</span>
+                      <span class="spec-value neon-pink">8 GB DDR4</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label">Свободное место:</span>
+                      <span class="spec-value neon-pink">120 GB</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">ОС:</span>
+                    <span class="spec-value neon-pink">Windows 10/11 64-bit</span>
+                  </div>
+                </div>
+
+                <h3>🎮 Рекомендуемые требования ►</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">Процессор:</span>
+                        <span class="spec-value neon-cyan">Intel Core i7-8700K</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Видеокарта:</span>
+                        <span class="spec-value neon-pink">NVIDIA RTX 2070 Super</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label">ОЗУ:</span>
+                      <span class="spec-value neon-pink">16 GB DDR4</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label">Свободное место:</span>
+                      <span class="spec-value neon-pink">140 GB</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">ОС:</span>
+                    <span class="spec-value neon-pink">Windows 10/11 64-bit</span>
+                  </div>
+                </div>
+
+                <h3>🎮 Максимальные системные требования ►</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">Процессор:</span>
+                        <span class="spec-value neon-cyan">Intel Core i9-11900K</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Видеокарта:</span>
+                        <span class="spec-value neon-pink">NVIDIA RTX 3080 Ti</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label">ОЗУ:</span>
+                      <span class="spec-value neon-pink">32 GB DDR4</span>
+                    </div>
+                    <div class="spec-item">
+                      <span class="spec-label">Свободное место:</span>
+                      <span class="spec-value neon-pink">160 GB</span>
+                  </div>
+                  <div class="spec-item">
+                    <span class="spec-label">ОС:</span>
+                    <span class="spec-value neon-pink">Windows 10/11 64-bit</span>
+                  </div>
+                </div>
+
+            </div>
+        </section>
+        </main>
+
+        <footer class="cyber-footer fade-in">
+          <div class="footer-grid"></div>
+          <div class="footer-content">
+            <p class="footer-text">© 2025 BLACK WHOLE. ALL RIGHTS HACKED.</p>
+            <div class="social-links fade-in">
+              <a href="#" class="social-icon">VK</a>
+              <a href="#" class="social-icon">TG</a>
+              <a href="#" class="social-icon">OK</a>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+</html>
